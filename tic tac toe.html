@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<video autoplay muted loop id="myVideo">
+			<source id="src" src="background1.mp4" type="video/mp4" />
+			Your browser does not support HTML5 video.
+		</video>
+		<div id="banner"><span id="x">X </span><span id="o">O </span><span id="game">Game</span></div>
+		<table onclick="whoWin()" id="XOgame">
+			<tr>
+				<td><input type="text" id="td1" readonly /></td>
+				<td><input type="text" id="td2" readonly /></td>
+				<td><input type="text" id="td3" readonly /></td>
+			</tr>
+			<tr>
+				<td><input type="text" id="td4" readonly /></td>
+				<td><input type="text" id="td5" readonly /></td>
+				<td><input type="text" id="td6" readonly /></td>
+			</tr>
+			<tr>
+				<td><input type="text" id="td7" readonly /></td>
+				<td><input type="text" id="td8" readonly /></td>
+				<td><input type="text" id="td9" readonly /></td>
+			</tr>
+		</table>
+		<div id="modal">
+			<button onclick="newGame() " id="reset">New Game</button>
+			<div id="test"></div>
+			<button onclick="quitGame()" id="quit">Quit</button>
+		</div>
+		<div id="help"><button onmouseenter="runAway()">Return To Game</button></div>
+
+		<script src="script.js"></script>
+	</body>
+</html>

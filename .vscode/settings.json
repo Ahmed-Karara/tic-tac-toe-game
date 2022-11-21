@@ -1,0 +1,7 @@
+{
+	"prettier.useEditorConfig": true,
+	"prettier.useTabs": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"prettier.withNodeModules": false,
+	"prettier.requireConfig": false
+}

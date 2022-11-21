@@ -1,0 +1,132 @@
+* {
+	user-select: none;
+	cursor: pointer;
+}
+
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+#banner {
+	width: 450px;
+	height: 50px;
+	background: #110;
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	text-align: center;
+	line-height: 50px;
+	font-size: 30px;
+	font-weight: 550;
+	border-radius: 10px;
+	letter-spacing: 5px;
+	padding: 5px;
+	color: #fff;
+	z-index: 2;
+	transition: all 0.8s;
+}
+#x {
+	color: #e20000;
+	font-size: 35px;
+}
+#o {
+	color: #001172;
+	font-size: 35px;
+}
+
+table {
+	position: relative;
+	left: 50%;
+	z-index: 2;
+	transform: translate(-50%, 50%);
+	transition: all 0.5s;
+}
+td {
+	width: 50px;
+	height: 50px;
+	background: #113;
+	transition: all 0.4s;
+}
+td:hover {
+	background: #000;
+}
+
+input {
+	width: 100px;
+	height: 100px;
+	font-size: 40px;
+	font-weight: 550;
+	border: none;
+	outline: none;
+	color: #000000;
+	background-color: transparent;
+}
+input::selection {
+	color: #f3f3f3;
+	background: transparent;
+}
+
+#myVideo {
+	position: fixed;
+	right: -2.5%;
+	min-height: 100%;
+	min-width: 100%;
+}
+#modal {
+	width: 80%;
+	height: 600px;
+	opacity: 0.8;
+	position: absolute;
+	top: 0%;
+	left: 10%;
+	z-index: 2;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transform: scale(0);
+	transition: all 0.3s;
+}
+
+#modal button {
+	width: 170px;
+	height: 35px;
+	background: #0c9400;
+	border-radius: 10px;
+	border: none;
+	color: #fff;
+	font-size: 16px;
+	transition: transform 0.5s;
+	margin: 30px 0;
+}
+
+#modal #test {
+	color: #e20000;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+#modal #quit {
+	background: #e20000;
+}
+
+#help {
+	position: absolute;
+	bottom: 2%;
+	left: 4%;
+	display: none;
+	transition: all 0.2s;
+}
+#help button {
+	width: 200px;
+	height: 40px;
+	border-radius: 15px;
+	background: rgb(58, 0, 105);
+	color: #fff;
+	font-size: 18px;
+	border: none;
+}
